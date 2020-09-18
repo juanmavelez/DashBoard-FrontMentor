@@ -18,6 +18,7 @@
   --Light_Theme_CARD_BG: hsl(227, 47%, 96%);
   --Light_Theme_TEXT: hsl(228, 12%, 44%);
   --Light_Theme_DARKTEXT: hsl(230, 17%, 14%);
+
 }
 html {
   font-size: 62.5%;
@@ -37,18 +38,21 @@ h1{
 
 main{
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .header__switch {
   display: flex;
   justify-content: space-around;
 }
+
+.overview__section,
 .general__section{
   display:grid;
   gap: 1.5rem;
 }
 
+.overview__article,
 .general__article{
   display: grid;
   border-radius: .5rem;
@@ -63,7 +67,7 @@ main{
 
 .general__article__footer__icon,
 .general__article__header__icon{
-  margin-inline-end: 1rem;
+  margin-inline-end: .5rem;
   margin-inline-start: 1rem;
   font-weight: 400;
 }
@@ -71,12 +75,12 @@ main{
 .general__article__footer p,
 .general__article__header p{
   margin-top: 2rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
 .general__article__header__icon img{
-  min-width: 2rem;
+  min-width: 2.5rem;
 }
 
 .general__article__main {
@@ -121,3 +125,46 @@ background-color: var(--Facebook_Color);
 .general__article:nth-of-type(4){
   background-color: var(--YouTube_Color);
 }
+
+.overview__article{
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--Light_Theme_CARD_BG);
+  font-weight: 700;
+}
+
+.overview__article__number,
+.overview__article__text{
+  justify-content: flex-start;
+  margin-left: 10vw;
+}
+
+.overview__article__icon,
+.overview__article__icon__difference{
+  justify-self: self-end;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10vw;
+}
+
+.overview__article__text{
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.overview__article__icon{
+  margin-top: 3rem;
+}
+
+.overview__article__icon__difference{
+  font-size: 1.4rem;
+  color: var(--Lime_Green);
+}
+.overview__article__number{
+  font-size: 3rem;
+}
+
+.overview__article__icon img{
+  min-width: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
