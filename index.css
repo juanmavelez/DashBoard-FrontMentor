@@ -3,8 +3,8 @@
   --Bright_Red: hsl(356, 69%, 56%);
   --Facebook_Color: hsl(208, 92%, 53%);
   --Twitter_Color: hsl(203, 89%, 53%);
-  --Instagram_Color: linear-gradient(hsl(37, 97%, 70%),hsl(329, 70%, 58%));
-  --YouTube_Color: hsl(348, 97%, 39%)
+  --Instagram_Color: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+  --YouTube_Color: hsl(348, 97%, 39%);
   --Toggle: linear-gradient(hsl(210, 78%, 56%),hsl(146, 68%, 55%));
   --Toggle: hsl(230, 22%, 74%);
 
@@ -48,10 +48,11 @@ main{
   display:grid;
   gap: 1.5rem;
 }
+
 .general__article{
-  background-color: var(--Light_Theme_CARD_BG);
   display: grid;
   border-radius: .5rem;
+  padding-top: .5rem
 }
 
 .general__article__footer,
@@ -99,15 +100,24 @@ main{
   color: var(--Bright_Red);
 }
 
+.general__article__header,
+.general__article__main,
+.general__article__footer{
+  background-color:  var(--Light_Theme_CARD_BG);
+  width: 100%;
+  padding: 0;
+}
+
+
 .general__article:nth-of-type(1){
-  border-top: .5rem solid var(--Facebook_Color);
+background-color: var(--Facebook_Color);
 }
 .general__article:nth-of-type(2){
-  border-top: .5rem solid var(--Twitter_Color);
+  background-color: var(--Twitter_Color) ;
+}
+.general__article:nth-of-type(3){
+  background-image: var(--Instagram_Color);
 }
 .general__article:nth-of-type(4){
-  border-top: .5rem solid var(--Instagram_Color);
-}
-.general__article:nth-of-type(4){
-  border-top: .5rem solid var(--Facebook_Color);
+  background-color: var(--YouTube_Color);
 }
