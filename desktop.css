@@ -19,6 +19,9 @@
   margin-right: 5rem;
   font-size: 2rem;
 }
+.header_darkmode__switch{
+  align-self: center;
+}
 .overview__section,
 .general__section{
   grid-auto-flow: row;
