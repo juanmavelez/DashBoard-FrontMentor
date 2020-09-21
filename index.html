@@ -1,214 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | [Challenge Name Here] </title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="./index.css"/>
-<!--   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
-</head>
-<body>
-    <header class="header">
-      <h1> Social Media Dashboard </h1>
-      <h2>Total Followers: 23,004</h2>
-      <label class="header__switch">
-        <span class="slider">Dark Mode</span>
-        <input type="checkbox">
-      </label>
-    </header>
-    <main>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | [Challenge Name Here]</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="stylesheet"
+			href="./desktop.css"
+			media="screen and (min-width  1024px)"
+		/>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<header class="header">
+      <div class="header_text">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+			<div class="header__darkmode">
+				<p class="header__darkmode__text">Dark mode</p>
+				<div class="header_darkmode__switch">
+					<label class="header__switch">
+						<input type="checkbox" onClick="changeTheme()"/>
+						<span id="slider__switch" class="slider round" ></span>
+					</label>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="general__section">
+				<article class="general__article">
+					<header class="general__article__header">
+						<figure class="general__article__header__icon">
+							<img src="/images/icon-facebook.svg" alt="logo_facebook" />
+						</figure>
+						<p>@nathanf</p>
+					</header>
+					<main class="general__article__main">
+						<h1>1987</h1>
+						<p>F O L L O W E R S</p>
+					</main>
+					<footer class="general__article__footer">
+						<figure class="general__article__footer__icon">
+							<img src="/images/icon-up.svg" alt="icon_up" />
+						</figure>
+						<p>12 Today</p>
+					</footer>
+				</article>
 
-      <section class="general__section">
-          <article class="general__article">
-            <header class="general__article__header">
-              <figure class="general__article__header__icon">
-                <img src="/images/icon-facebook.svg" alt="logo_facebook">
-              </figure>
-              <p>@nathanf</p>
-            </header>
-            <main class="general__article__main">
-              <h1>1987</h1>
-              <p>F O L L O W E R S</p>
-            </main>
-            <footer class="general__article__footer">
-              <figure class="general__article__footer__icon">
-                <img src="/images/icon-up.svg" alt="icon_up">
-              </figure>
-              <p>12 Today</p>
-            </footer>
-        </article>
+				<article class="general__article">
+					<header class="general__article__header">
+						<figure class="general__article__header__icon">
+							<img src="/images/icon-twitter.svg" alt="logo_twitter" />
+						</figure>
+						<p>@nathanf</p>
+					</header>
+					<main class="general__article__main">
+						<h1>1044</h1>
+						<p>F O L L O W E R S</p>
+					</main>
+					<footer class="general__article__footer">
+						<figure class="general__article__footer__icon">
+							<img src="/images/icon-up.svg" alt="icon_up" />
+						</figure>
+						<p>99 Today</p>
+					</footer>
+				</article>
 
-        <article class="general__article">
-          <header class="general__article__header">
-            <figure class="general__article__header__icon">
-              <img src="/images/icon-twitter.svg" alt="logo_twitter">
-            </figure>
-            <p>@nathanf</p>
-          </header>
-          <main class="general__article__main">
-            <h1>1044</h1>
-            <p>F O L L O W E R S</p>
-          </main>
-          <footer class="general__article__footer">
-            <figure class="general__article__footer__icon">
-              <img src="/images/icon-up.svg" alt="icon_up">
-            </figure>
-            <p>99 Today</p>
-          </footer>
-        </article>
+				<article class="general__article">
+					<header class="general__article__header">
+						<figure class="general__article__header__icon">
+							<img src="/images/icon-instagram.svg" alt="logo_instagram" />
+						</figure>
+						<p>@realnathanf</p>
+					</header>
+					<main class="general__article__main">
+						<h1>11k</h1>
+						<p>F O L L O W E R S</p>
+					</main>
+					<footer class="general__article__footer">
+						<figure class="general__article__footer__icon">
+							<img src="/images/icon-up.svg" alt="icon_up" />
+						</figure>
+						<p>1099 Today</p>
+					</footer>
+				</article>
 
-        <article class="general__article">
-          <header class="general__article__header">
-            <figure class="general__article__header__icon">
-              <img src="/images/icon-instagram.svg" alt="logo_instagram">
-            </figure>
-            <p>@realnathanf</p>
-          </header>
-          <main class="general__article__main">
-            <h1>11k</h1>
-            <p>F O L L O W E R S</p>
-          </main>
-          <footer class="general__article__footer">
-            <figure class="general__article__footer__icon">
-              <img src="/images/icon-up.svg" alt="icon_up">
-            </figure>
-            <p>1099 Today</p>
-          </footer>
-        </article>
+				<article class="general__article">
+					<header class="general__article__header">
+						<figure class="general__article__header__icon">
+							<img src="/images/icon-youtube.svg" alt="logo_youtube" />
+						</figure>
+						<p>Nathan F.</p>
+					</header>
+					<main class="general__article__main">
+						<h1>8239</h1>
+						<p>F O L L O W E R S</p>
+					</main>
+					<footer class="general__article__footer">
+						<figure class="general__article__footer__icon">
+							<img src="/images/icon-down.svg" alt="icon_down" />
+						</figure>
+						<p>144 Today</p>
+					</footer>
+				</article>
+			</section>
 
-        <article class="general__article">
-          <header class="general__article__header">
-            <figure class="general__article__header__icon">
-              <img src="/images/icon-youtube.svg" alt="logo_youtube">
-            </figure>
-            <p> Nathan F. </p>
-          </header>
-          <main class="general__article__main">
-            <h1> 8239 </h1>
-            <p> F O L L O W E R S </p>
-          </main>
-          <footer class="general__article__footer">
-            <figure class="general__article__footer__icon">
-              <img src="/images/icon-down.svg" alt="icon_down">
-            </figure>
-            <p> 144 Today</p>
-          </footer>
-        </article>
+			<h1>Overview - Today</h1>
 
-      </section>
+			<section class="overview__section">
+				<!-- facebook -->
+				<article class="overview__article">
+					<p class="overview__article__text">Page Views</p>
+					<figure class="overview__article__icon">
+						<img src="/images/icon-facebook.svg" alt="logo_facebook" />
+					</figure>
+					<h1 class="overview__article__number">87</h1>
+					<figure class="overview__article__icon__difference">
+						<img src="/images/icon-up.svg" alt="icon_up" />
+						<span> 3% </span>
+					</figure>
+				</article>
 
-      <h1>Overview - Today</h1>
+				<article class="overview__article">
+					<p class="overview__article__text">Likes</p>
+					<figure class="overview__article__icon">
+						<img src="/images/icon-facebook.svg" alt="logo_facebook" />
+					</figure>
+					<h1 class="overview__article__number">52</h1>
+					<figure class="overview__article__icon__difference">
+						<img src="/images/icon-down.svg" alt="icon_down" />
+						<span> 2% </span>
+					</figure>
+				</article>
+				<!-- Intagram -->
+				<article class="overview__article">
+					<p class="overview__article__text">Likes</p>
+					<figure class="overview__article__icon">
+						<img src="/images/icon-instagram.svg" alt="logo_instagram" />
+					</figure>
+					<h1 class="overview__article__number">5462</h1>
+					<figure class="overview__article__icon__difference">
+						<img src="/images/icon-up.svg" alt="icon_up" />
+						<span> 2257% </span>
+					</figure>
+				</article>
 
-      <section class= "overview__section">
-<!-- facebook -->
-        <article class= "overview__article">
-          <p class= "overview__article__text"> Page Views </p>
-          <figure class="overview__article__icon">
-            <img src="/images/icon-facebook.svg" alt="logo_facebook">
-          </figure>
-          <h1 class="overview__article__number"> 87 </h1>
-          <figure class="overview__article__icon__difference">
-            <img src="/images/icon-up.svg" alt="icon_up">
-            <span> 3% </span>
-          </figure>
-        </article>
+				<article class="overview__article">
+					<p class="overview__article__text">Likes</p>
+					<figure class="overview__article__icon">
+						<img src="/images/icon-instagram.svg" alt="logo_instagram" />
+					</figure>
+					<h1 class="overview__article__number">52k</h1>
+					<figure class="overview__article__icon__difference">
+						<img src="/images/icon-up.svg" alt="icon_up" />
+						<span> 1375% </span>
+					</figure>
+				</article>
+				<!-- twitter -->
+				<article class="overview__article">
+					<p class="overview__article__text">Retweets</p>
+					<figure class="overview__article__icon">
+						<img src="/images/icon-twitter.svg" alt="logo_twitter" />
+					</figure>
+					<h1 class="overview__article__number">117</h1>
+					<figure class="overview__article__icon__difference">
+						<img src="/images/icon-up.svg" alt="icon_up" />
+						<span> 303% </span>
+					</figure>
+				</article>
 
-        <article class= "overview__article">
-          <p class= "overview__article__text"> Likes </p>
-          <figure class="overview__article__icon">
-            <img src="/images/icon-facebook.svg" alt="logo_facebook">
-          </figure>
-          <h1 class="overview__article__number"> 52 </h1>
-          <figure class="overview__article__icon__difference">
-            <img src="/images/icon-down.svg" alt="icon_down">
-            <span> 2% </span>
-          </figure>
-        </article>
-<!-- Intagram -->
-        <article class= "overview__article">
-          <p class= "overview__article__text"> Likes </p>
-          <figure class="overview__article__icon">
-            <img src="/images/icon-instagram.svg" alt="logo_instagram">
-          </figure>
-          <h1 class="overview__article__number"> 5462 </h1>
-          <figure class="overview__article__icon__difference">
-            <img src="/images/icon-up.svg" alt="icon_up">
-            <span> 2257% </span>
-          </figure>
-        </article>
+				<article class="overview__article">
+					<p class="overview__article__text">Likes</p>
+					<figure class="overview__article__icon">
+						<img src="/images/icon-twitter.svg" alt="logo_twitter" />
+					</figure>
+					<h1 class="overview__article__number">507</h1>
+					<figure class="overview__article__icon__difference">
+						<img src="/images/icon-up.svg" alt="icon_up" />
+						<span> 553% </span>
+					</figure>
+				</article>
+				<!-- youtube -->
+				<article class="overview__article">
+					<p class="overview__article__text">Likes</p>
+					<figure class="overview__article__icon">
+						<img src="/images/icon-youtube.svg" alt="logo_youtube" />
+					</figure>
+					<h1 class="overview__article__number">107</h1>
+					<figure class="overview__article__icon__difference">
+						<img src="/images/icon-down.svg" alt="icon-down" />
+						<span> 19% </span>
+					</figure>
+				</article>
 
+				<article class="overview__article">
+					<p class="overview__article__text">Total Views</p>
+					<figure class="overview__article__icon">
+						<img src="/images/icon-youtube.svg" alt="logo_youtube" />
+					</figure>
+					<h1 class="overview__article__number">1407</h1>
+					<figure class="overview__article__icon__difference">
+						<img src="/images/icon-down.svg" alt="icon_down" />
+						<span> 12% </span>
+					</figure>
+				</article>
+			</section>
+		</main>
 
-        <article class= "overview__article">
-          <p class= "overview__article__text"> Likes </p>
-          <figure class="overview__article__icon">
-            <img src="/images/icon-instagram.svg" alt="logo_instagram">
-          </figure>
-          <h1 class="overview__article__number"> 52k </h1>
-          <figure class="overview__article__icon__difference">
-            <img src="/images/icon-up.svg" alt="icon_up">
-            <span> 1375% </span>
-          </figure>
-        </article>
-<!-- twitter -->
-        <article class= "overview__article">
-          <p class= "overview__article__text"> Retweets </p>
-          <figure class="overview__article__icon">
-            <img src="/images/icon-twitter.svg" alt="logo_twitter">
-          </figure>
-          <h1 class="overview__article__number"> 117 </h1>
-          <figure class="overview__article__icon__difference">
-            <img src="/images/icon-up.svg" alt="icon_up">
-            <span> 303% </span>
-          </figure>
-        </article>
-
-        <article class= "overview__article">
-          <p class= "overview__article__text"> Likes </p>
-          <figure class="overview__article__icon">
-            <img src="/images/icon-twitter.svg" alt="logo_twitter">
-          </figure>
-          <h1 class="overview__article__number"> 507 </h1>
-          <figure class="overview__article__icon__difference">
-            <img src="/images/icon-up.svg" alt="icon_up">
-            <span> 553% </span>
-          </figure>
-        </article>
-<!-- youtube -->
-        <article class= "overview__article">
-          <p class= "overview__article__text"> Likes </p>
-          <figure class="overview__article__icon">
-            <img src="/images/icon-youtube.svg" alt="logo_youtube">
-          </figure>
-          <h1 class="overview__article__number"> 107 </h1>
-          <figure class="overview__article__icon__difference">
-            <img src="/images/icon-down.svg" alt="icon-down">
-            <span> 19% </span>
-          </figure>
-        </article>
-
-        <article class= "overview__article">
-          <p class= "overview__article__text"> Total Views </p>
-          <figure class="overview__article__icon">
-            <img src="/images/icon-youtube.svg" alt="logo_youtube">
-          </figure>
-          <h1 class="overview__article__number"> 1407 </h1>
-          <figure class="overview__article__icon__difference">
-            <img src="/images/icon-up.svg" alt="icon_up">
-            <span> 12% </span>
-          </figure>
-        </article>
-      </section>
-    </main>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Juan manuel Velez</a>.
-  </div>
-</body>
+		<footer class="attribution">
+			Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor</a
+			>. Coded by <a href="#">Juan manuel Velez</a>.
+    </footer>
+	</body>
 </html>

@@ -1,0 +1,4 @@
+.general__section{
+ grid-auto-flow: row;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+}
