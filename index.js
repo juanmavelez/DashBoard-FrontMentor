@@ -17,21 +17,21 @@ const light_theme_TEXT = styles.getPropertyValue("--Light_Theme_TEXT");
 const light_theme_DARKTEXT = styles.getPropertyValue("--Light_Theme_DARKTEXT");
 
 function changeTheme() {
-		if (
-			light_theme_BG == styles.getPropertyValue("--Light_Theme_BG")
-      ) {
+		if (light_theme_BG == styles.getPropertyValue("--Light_Theme_BG")){
         root.style.setProperty("--Light_Theme_BG", dark_theme_bg);
         root.style.setProperty("--Light_Theme__TOP_BG", dark_theme_TOP_BG);
         root.style.setProperty("--Light_Theme_CARD_BG", dark_theme_CARD_BG);
         root.style.setProperty("--Light_Theme_TEXT", dark_theme_TEXT);
         root.style.setProperty("--Light_Theme_DARKTEXT", dark_theme_DARKTEXT);
         root.style.setProperty("--Image_Togle", toggle_darkMode);
+        root.getElementsByClassName("slider")[0].style.backgroundImage = toggle_darkMode;
+
     } else {
       root.style.setProperty("--Light_Theme_BG", light_theme_BG);
       root.style.setProperty("--Light_Theme__TOP_BG", light_theme_TOP_BG);
       root.style.setProperty("--Light_Theme_CARD_BG", light_theme_CARD_BG);
       root.style.setProperty("--Light_Theme_TEXT", light_theme_TEXT);
       root.style.setProperty("--Light_Theme_DARKTEXT", light_theme_DARKTEXT);
+      root.getElementsByClassName("slider")[0].style.backgroundImage = "";
     }
-
 }
