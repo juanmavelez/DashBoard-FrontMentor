@@ -1,0 +1,30 @@
+.overview__section,
+.general__section {
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_text {
+  border-bottom: none;
+  margin-bottom: 3rem;
+}
+
+.header__darkmode {
+  margin-right: 2rem;
+  margin-top: 4rem;
+}
+
+.header__darkmode p {
+  margin: 0;
+  margin-top: 0.2rem;
+  margin-right: 1rem;
+}
+
+.header__darkmode__text {
+  margin-right: 3rem;
+}

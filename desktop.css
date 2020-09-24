@@ -1,29 +1,8 @@
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header_text{
- border-bottom: none;
- margin-bottom: 4rem;
-}
-
-.header_text h1{
-  font-size: 3.5rem;
-}
-
-.header_text p{
-  font-size: 2rem;
-}
-.header__darkmode__text{
-  margin-right: 5rem;
-  font-size: 2rem;
-}
-.header_darkmode__switch{
-  align-self: center;
+body {
+  max-width: 80vw;
 }
 .overview__section,
-.general__section{
+.general__section {
   grid-auto-flow: row;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
