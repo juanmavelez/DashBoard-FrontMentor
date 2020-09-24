@@ -19,6 +19,7 @@
   --Light_Theme_CARD_BG: hsl(227, 47%, 96%);
   --Light_Theme_TEXT: hsl(228, 12%, 44%);
   --Light_Theme_DARKTEXT: hsl(230, 17%, 14%);
+  --Light_Theme_SHADOW: 0 0 20px 3px rgb(88 79 79 / 75%);
 }
 
 html {
@@ -69,6 +70,7 @@ main {
   display: inline-block;
   width: 3rem;
   height: 1.7rem;
+  border-radius: 50%;
 }
 
 .header__switch input {
@@ -269,4 +271,10 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+}
+
+.general__article:hover,
+.overview__article:hover,
+.header__switch:hover {
+  box-shadow: var(--Light_Theme_SHADOW);
 }
